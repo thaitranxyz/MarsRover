@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InterviewPractice\MarsRover.csproj" />
     <ProjectReference Include="..\MarsRover\MarsRover.csproj" />
   </ItemGroup>
 

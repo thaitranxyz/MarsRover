@@ -6,13 +6,22 @@ namespace MarsRover
 {
     public class Rover
     {
-        private int x; 
-        private int y; 
+        public int x; 
+        public int y; 
         private int plateauX;
         private int plateauY;
-        private string direction;
+        public string direction;
         private int numOfRover = 2; 
         private List<string> outputs = new List<string>();
+
+        public Rover() { }
+
+        public Rover(int x, int y, string direction)
+        {
+            this.x = x;
+            this.y = y;
+            this.direction = direction;
+        }
 
         public void Start()
         {

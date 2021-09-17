@@ -8,17 +8,23 @@ namespace RoverTest
         public const string ExpectedOutput = "1 3 N";
 
         [Test]
-        public void Test1()
+        public void TestRoverPosition()
         {
-            MarsRover.Rover rover = new MarsRover.Rover();
-            rover.SetRoverPosition();
+            MarsRover.Rover rover = new MarsRover.Rover(1, 3, "N");
 
             rover.Move();
 
-            List<string> results = rover.PrintRoverLocation();
+            Assert.AreEqual(rover.y, 4);
+        }
 
-            Assert.AreEqual(results, ExpectedOutput);
-            Assert.Pass();
+        [Test]
+        public void TestRoverDirection()
+        {
+            MarsRover.Rover rover = new MarsRover.Rover(1, 3, "N");
+
+            rover.Left();
+
+            Assert.AreEqual(rover.direction, "W");
         }
     }
 }
