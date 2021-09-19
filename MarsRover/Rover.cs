@@ -38,6 +38,7 @@ namespace MarsRover
 
         public void IntitializingRover()
         {
+            //Remove lines below to take input for number of rovers.
             //Console.WriteLine("How many rovers do you want: ");
             //numOfRover = Int32.Parse(Console.ReadLine());
 
